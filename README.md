@@ -18,17 +18,17 @@ Proyecto académico de una tienda virtual completa, desarrollado como parte de l
 - **Entorno local:** XAMPP (Apache + MySQL)
 
 ## Estructura del proyecto
-├── img/ # Imágenes de productos
-├── index.php # Página principal / catálogo
-├── detalle.php # Vista de detalle de producto
-├── Conexion.php # Conexión a la base de datos
-├── login.php, Login_validar.php, logout.php, sesion.php # Autenticación
-├── carrito.php, Carrito_agregar.php, Carrito_listar.php,
-│ Carrito_actualizar.php, Carriyo_eliminar.php # Carrito de compras
-├── style.css, extra.css # Estilos
-├── tienda.js, carrito_vista.js # Lógica en el cliente
-├── tienda_virtual.sql # Esquema principal de la base de datos
-└── 02_auth_y_carrito.sql # Esquema de autenticación y carrito
+- img/ # Imágenes de productos
+- index.php # Página principal / catálogo
+- detalle.php # Vista de detalle de producto
+- Conexion.php # Conexión a la base de datos
+- login.php, Login_validar.php, logout.php, sesion.php # Autenticación
+- carrito.php, Carrito_agregar.php, Carrito_listar.php,
+- Carrito_actualizar.php, Carriyo_eliminar.php # Carrito de compras
+- style.css, extra.css # Estilos
+- tienda.js, carrito_vista.js # Lógica en el cliente
+- tienda_virtual.sql # Esquema principal de la base de datos
+- 02_auth_y_carrito.sql # Esquema de autenticación y carrito
 
 ## Cómo ejecutarlo localmente
 
