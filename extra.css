@@ -1,0 +1,60 @@
+/* ============================================================
+   extra.css — Estilos para login, modal de detalle y carrito
+   Reutiliza la paleta de style.css (azul #1a73e8)
+   ============================================================ */
+
+/* ── Nav: nombre de usuario ── */
+.nav-usuario { color:#fff; font-size:0.9rem; opacity:0.95; margin-left:4px; }
+
+/* ── LOGIN ── */
+.login-card {
+  background:#fff; max-width:380px; margin:40px auto; padding:32px;
+  border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.login-card h2 { color:#1a73e8; font-size:1.3rem; margin-bottom:20px; text-align:center; }
+.login-card .form-group { margin-bottom:16px; }
+.login-error {
+  background:#fdecea; color:#c62828; padding:10px 14px; border-radius:8px;
+  font-size:0.88rem; margin-bottom:16px; text-align:center;
+}
+.login-pista { text-align:center; font-size:0.8rem; color:#999; margin-top:16px; }
+
+/* ── MODAL DE DETALLE ── */
+.overlay-modal {
+  display:none; position:fixed; inset:0; background:rgba(0,0,0,.55);
+  justify-content:center; align-items:center; z-index:1000; padding:20px;
+}
+.modal-caja {
+  background:#fff; border-radius:14px; max-width:760px; width:100%;
+  position:relative; padding:28px; max-height:90vh; overflow:auto;
+  box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+.modal-cerrar {
+  position:absolute; top:12px; right:16px; border:none; background:none;
+  font-size:28px; line-height:1; color:#888; cursor:pointer;
+}
+.modal-cerrar:hover { color:#333; }
+.modal-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start; }
+@media (max-width:640px) { .modal-grid { grid-template-columns:1fr; } }
+.modal-img-wrap img { width:100%; border-radius:12px; object-fit:cover; max-height:320px; }
+.modal-info { display:flex; flex-direction:column; gap:14px; }
+.modal-info h2 { font-size:1.4rem; }
+.modal-desc { font-size:0.92rem; line-height:1.6; color:#444; }
+
+/* ── VISTA DEL CARRITO ── */
+.tabla-carrito { width:100%; border-collapse:collapse; margin-top:8px; }
+.tabla-carrito th, .tabla-carrito td {
+  padding:12px 10px; border-bottom:1px solid #eee; text-align:left;
+  font-size:0.9rem; vertical-align:middle;
+}
+.tabla-carrito th { color:#888; font-weight:600; font-size:0.8rem; text-transform:uppercase; }
+.carrito-img { width:54px; height:54px; object-fit:cover; border-radius:8px; }
+.carrito-cant { width:64px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; }
+.btn-quitar {
+  background:#fdecea; color:#c62828; border:none; padding:7px 12px;
+  border-radius:6px; cursor:pointer; font-size:0.82rem; font-weight:600;
+}
+.btn-quitar:hover { background:#f8d7d3; }
+.total-label { text-align:right; font-weight:600; color:#555; }
+.total-monto { font-weight:700; color:#1a73e8; font-size:1.05rem; }
+.carrito-vacio { text-align:center; color:#888; padding:40px 0; font-size:1.05rem; }
